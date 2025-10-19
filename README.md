@@ -15,7 +15,7 @@ Um die Übungsaufgaben herunterzuladen, im IntelliJ-Startbildschirm auf "Clone R
 
 ![image info](introduction/image/startscreen.png)
 
-Fügt unter "URL" nun die Adresse des Übungsrepository ein: **https://github.com/msg-up-vorkurs/vorkurs-se-2025.git**.
+Fügt unter "URL" nun die Adresse des Übungsrepository ein: **https://github.com/msg-up-vorkurs/vorkurs-se-2025.git**
 
 Damit die Aufgaben heruntergeladen werden können, wird mit git ein separates Programm benötigt. git kann direkt über IntelliJ installiert werden:
 
