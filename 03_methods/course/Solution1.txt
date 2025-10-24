@@ -1,0 +1,6 @@
+class Person {
+
+    void sayHelloTo(Person counterpart) {
+        IO.println("Hello " + counterpart.firstName + ", my name is " + this.fullName());
+    }
+}

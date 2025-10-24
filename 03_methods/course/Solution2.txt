@@ -1,0 +1,6 @@
+class Person {
+
+    void celebrateBirthday() {
+        this.age = this.age + 1;
+    }
+}

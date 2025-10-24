@@ -15,7 +15,7 @@ public class Person {
         this.height = height;
         this.weight = weight;
     }
-/*
+
     void sayHello() {
         IO.println("Hello, my name is " + this.fullName() + " and I am " + this.age + " years old.");
     }
@@ -46,18 +46,6 @@ public class Person {
 
     boolean isOlderThan(int years) {
         return this.age > years;
-    }*/
-
-    void sayFullName() {
-        IO.println("Ganzer Name: " + this.firstName + " " + this.lastName);
-    }
-
-    String sayOnlyFullName() {
-        return this.firstName + " " + this.lastName;
-    }
-
-    void sayHelloTo(String otherName) {
-        IO.println("Hallo " + otherName + "! Ich bin " + this.firstName);
     }
 
     static void main() {
@@ -70,19 +58,7 @@ public class Person {
          * [Objekt].[Methode]([Parameter, ...]);
          */
 
-        bob.sayFullName();
-        alice.sayFullName();
-
-        IO.println("Ganzer Name: " + bob.firstName + " " + bob.lastName);
-        IO.println("Ganzer Name: " + alice.firstName + " " + alice.lastName);
-
-        IO.println(bob.sayOnlyFullName());
-        IO.println(bob.sayOnlyFullName() + " " + alice.sayOnlyFullName());
-
-        IO.println("Hallo " + alice.firstName + "! Ich bin " + bob.firstName);
-        bob.sayHelloTo(alice.firstName);
-
-        /*bob.sayHello();
+        bob.sayHello();
         IO.println(bob.fullName());
 
         alice.sayHelloTo("John");
@@ -98,6 +74,6 @@ public class Person {
         IO.println("Bob's age after birthday: " + bob.age);
 
         IO.println("Is Bob an adult?: " + bob.isOlderThan(18));
-*/
+
     }
 }
