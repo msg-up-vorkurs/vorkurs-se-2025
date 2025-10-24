@@ -1,0 +1,6 @@
+class Person {
+
+    <Rückgabetyp> celebrateBirthday(<Parameterliste>) {
+        <Methodenrumpf>
+    }
+}

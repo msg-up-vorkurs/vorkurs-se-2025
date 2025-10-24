@@ -1,0 +1,6 @@
+class Person {
+
+    <Rückgabetyp> sayHelloTo(<Parameterliste>) {
+        IO.println("Hello " + counterpart.firstName + ", my name is " + this.fullName());
+    }
+}
