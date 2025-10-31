@@ -9,5 +9,26 @@ void main() {
      * }
      */
 
+    boolean isWeatherNice = true;
+    boolean isWeatherMediocre = true;
+    if(isWeatherNice){
+        IO.println("Das Wetter ist schön");
+    } else if(isWeatherMediocre){
+        IO.println("Das Wetter ist mittelmäßig");
+    } else {
+        IO.println("Das Wetter ist nicht schön");
+    }
+
+    // |
+
+    int number = 5;
+    if(number < 10 & number > 2){
+        IO.println("Die Zahl ist kleiner zehn und größer als zwei");
+    }
+
+
+
+    IO.println("Programmende");
+
 
 }

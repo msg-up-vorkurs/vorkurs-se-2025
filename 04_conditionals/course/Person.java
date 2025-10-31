@@ -89,12 +89,6 @@ public class Person {
     public void interpretBMI() {
         float bmi = this.calculateBMI();
 
-//        if (bmi < 18.5F) {
-//            IO.println(bmi + " < 18.5: Untergewicht");
-//        } else {
-//            IO.println(bmi + " >= 18.5: Kein Untergewicht");
-//        }
-
         if (bmi < 18.5F) {
             IO.println(bmi + " < 18.5: Untergewicht");
         } else if (bmi > 25.0F) {
@@ -106,6 +100,7 @@ public class Person {
 
 
     static void main() {
-
+        Person john = new Person("John", "Doe" , 26, 1.86f, 92.0f);
+        john.interpretBMI();
     }
 }
