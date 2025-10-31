@@ -48,7 +48,7 @@ public class BankAccount {
      */
 
     void transferChecked(double amount, BankAccount to) {
-        if (this.calculateWithdrawLimit() >= amount) {
+        if (this.calculateWithdrawLimit() <= amount) {
             this.transfer(amount, to);
         } else {
             IO.println("Überweisung fehlgeschlagen: Konto nicht ausreichend gedeckt.");
