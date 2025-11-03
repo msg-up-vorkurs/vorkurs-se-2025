@@ -15,6 +15,7 @@
         <module>03_methods</module>
         <module>04_conditionals</module>
         <module>05_scope</module>
+        <module>06_references-equality</module>
     </modules>
 
     <properties>
