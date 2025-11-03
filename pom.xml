@@ -16,6 +16,7 @@
         <module>04_conditionals</module>
         <module>05_scope</module>
         <module>06_references-equality</module>
+        <module>07_arrays-loops</module>
     </modules>
 
     <properties>
