@@ -20,10 +20,6 @@ public class Person {
         IO.println("Hello " + somebody + ", I am " + this.name + " " + this.surname);
     }
 
-    //void sayHello() {
-    //    IO.println("Hello, my name is " + this.name + " " + this.surname);
-    //}
-
     void sayHello() {
         IO.println("Hello, my name is " + this.fullName() + " and I am " + this.age + " years old.");
     }
@@ -98,9 +94,30 @@ public class Person {
         }
     }
 
+    void printIsOldEnoughToEnterFunFair(){
+        float minimumHeight = 1.80F;
+
+        if(this.age >= 18){
+            IO.println(this.name + " ist alt genug für den Eintritt");
+            if(this.height >= minimumHeight){
+                IO.print(" und darf Fahrgeschäfte benutzen");
+            } else {
+                IO.println(" und darf keine Fahrgeschäfte benutzen");
+            }
+        } else {
+            IO.println(this.name + " ist nicht alt genug für den Eintritt");
+        }
+
+    }
+
 
     static void main() {
         Person john = new Person("John", "Doe" , 26, 1.86f, 92.0f);
         john.interpretBMI();
+
+        Person alice = new Person("Alice", "Doe", 18, 1.65f, 50f);
+
+        john.printIsOldEnoughToEnterFunFair();
+        alice.printIsOldEnoughToEnterFunFair();
     }
 }
