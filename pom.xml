@@ -17,6 +17,7 @@
         <module>05_scope</module>
         <module>06_references-equality</module>
         <module>07_arrays-loops</module>
+        <module>08_collections</module>
     </modules>
 
     <properties>
