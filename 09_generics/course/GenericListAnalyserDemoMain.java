@@ -19,5 +19,16 @@ public class GenericListAnalyserDemoMain {
         //TODO: Demo
         // Initialisiere für jedes Array ein GenericListAnalyserDemo-Objekt
         // und probiere die vorhandenen Methoden aus
+        GenericListAnalyserDemo<Integer> genericIntegerListAnalyser = new GenericListAnalyserDemo<>(inputIntegerList);
+        genericIntegerListAnalyser.printSize();
+        genericIntegerListAnalyser.printFirstElement();
+        genericIntegerListAnalyser.addElement(55);
+        //genericIntegerListAnalyser.addElement("Ciao!"); //FEHLER!
+        //Typ ist bereits festgelegt.
+
+        GenericListAnalyserDemo<String> genericStringAnalyser = new GenericListAnalyserDemo<>(inputStringList);
+        genericStringAnalyser.printSize();
+        genericStringAnalyser.printFirstElement();
+        genericStringAnalyser.addElement("Ciao!");
     }
 }
