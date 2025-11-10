@@ -19,6 +19,7 @@
         <module>07_arrays-loops</module>
         <module>08_collections</module>
         <module>09_generics</module>
+        <module>10_2d-arrays</module>
     </modules>
 
     <properties>
