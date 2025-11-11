@@ -20,6 +20,7 @@
         <module>08_collections</module>
         <module>09_generics</module>
         <module>10_2d-arrays</module>
+        <module>11_inheritance</module>
     </modules>
 
     <properties>
