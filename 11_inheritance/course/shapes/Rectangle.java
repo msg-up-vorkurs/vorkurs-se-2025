@@ -3,11 +3,7 @@ package course.shapes;
 /**
  * This class defines a simple rectangle.
  */
-public class Rectangle {
-    private String color;
-
-    private double posX;
-    private double posY;
+public class Rectangle extends Shape{
     private double width;
     private double height;
 
@@ -21,9 +17,7 @@ public class Rectangle {
      * @param height Height of the rectangle.
      */
     public Rectangle(String color, double posX, double posY, double width, double height) {
-        this.color = color;
-        this.posX = posX;
-        this.posY = posY;
+        super(color,posX, posY);
         this.width = width;
         this.height = height;
     }
@@ -69,6 +63,7 @@ public class Rectangle {
      *
      * @return Returns the circumference of this rectangle.
      */
+    @Override
     public double getCircumference() {
         return 2 * width + 2 * height;
     }
@@ -78,31 +73,8 @@ public class Rectangle {
      *
      * @return Returns the total area encompassed by this rectangle.
      */
+    @Override
     public double getArea() {
         return width * height;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getPosX() {
-        return posX;
-    }
-
-    public void setPosX(double posX) {
-        this.posX = posX;
-    }
-
-    public double getPosY() {
-        return posY;
-    }
-
-    public void setPosY(double posY) {
-        this.posY = posY;
     }
 }

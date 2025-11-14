@@ -3,10 +3,8 @@ package course.shapes;
 /**
  * This class defines a simple circle.
  */
-public class Circle {
-    private String color;
-    private double posX;
-    private double posY;
+public class Circle extends Shape {
+
     private double radius;
 
     /**
@@ -18,9 +16,7 @@ public class Circle {
      * @param radius Radius of the circle.
      */
     public Circle(String color, double posX, double posY, double radius) {
-        this.color = color;
-        this.posX = posX;
-        this.posY = posY;
+        super(color, posX, posY);
         this.radius = radius;
     }
 
@@ -47,6 +43,7 @@ public class Circle {
      *
      * @return Returns the circumference of this circle.
      */
+    @Override
     public double getCircumference() {
         return 2 * Math.PI * radius;
     }
@@ -56,31 +53,9 @@ public class Circle {
      *
      * @return Returns the total area encompassed by this circle.
      */
+    @Override
     public double getArea() {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getPosX() {
-        return posX;
-    }
-
-    public void setPosX(double posX) {
-        this.posX = posX;
-    }
-
-    public double getPosY() {
-        return posY;
-    }
-
-    public void setPosY(double posY) {
-        this.posY = posY;
-    }
 }
